@@ -25,7 +25,7 @@
 - (void)addTitleLabel
 {
     self.titleLabel = [UILabel new];
-    self.titleLabel.font = [UIFont fontWithName:@"Avenir-Light" size:20.f];
+    self.titleLabel.font = [UIFont fontWithName:@"Avenir-Light" size:16.f];
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     [self setTitleLabel];
     self.titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
@@ -71,7 +71,7 @@
     self.titleLabel.numberOfLines = 2;
     NSString *title = @"Menu";
     if ([self.titleLabel.text isEqualToString:title]) {
-        title = @"Which one gives you the MOST";
+        title = @"Which one gives you the MOST full";
     }
     self.titleLabel.text = title;
 }
